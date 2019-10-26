@@ -19,6 +19,7 @@ print("PID:\n{}".format(PIDlist))
 
 sh = wb.sheets['Sheet1']
 
+# automagically find the size of the data on a sheet using expand
 tablerange = sh.range("A1").expand("table")
 print(tablerange.value)
 
